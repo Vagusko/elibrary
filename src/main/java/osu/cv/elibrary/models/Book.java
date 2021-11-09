@@ -12,17 +12,17 @@ public class Book {
         this.name = name;
         this.author = author;
         this.downloadLink = downloadLink;
-//        this.purchased = false;
+        this.purchased = false;
     }
 
-//
-//    public boolean isPurchased() {
-//        return purchased;
-//    }
-//
-//    public void setPurchased(boolean purchased) {
-//        this.purchased = purchased;
-//    }
+
+    public boolean isPurchased() {
+        return purchased;
+    }
+
+    public void setPurchased(boolean purchased) {
+        this.purchased = purchased;
+    }
 
 
     public int getId() {

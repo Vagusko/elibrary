@@ -13,7 +13,17 @@ public class BookService {
     public void addBook(Book book) {
         books.add(book);
     }
+
     private List<Book> books = new ArrayList<>();
+
+    public void payBook(Book boughtBook) {
+        books.forEach(book ->
+        {
+            if (book == boughtBook) {
+                book.setPurchased(true);
+            }
+        });
+    }
 
     public BookService() {
         books.add(new Book(1, "Duna", "Frank Herbert", "www.boooks.cz/download"));

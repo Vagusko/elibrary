@@ -13,13 +13,7 @@ import java.io.PrintWriter;
 public class ServletAddBook extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("text/html");
-        String message = "Add book servlet";
-        // Hello
-        PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>" + message + "</h1>");
-        out.println("</body></html>");
+        response.sendRedirect("index.jsp");
     }
 
     @Override
